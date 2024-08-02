@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header, main, footer {
+            padding: 1rem;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .about-me {
+            text-align: center;
+            padding: 2rem 0;
+        }
+        .about-me img {
+            border-radius: 0;  /* Make the image square */
+            width: 300px;      /* Increase the width */
+            height: 300px;     /* Increase the height */
+            margin-bottom: 1rem;
+        }
+        .about-me h2 {
+            margin: 0.5rem 0;
+        }
+        .projects, .skills {
+            padding: 2rem 0;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .project, .skill {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+        }
+        .project img, .skill img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        .project h3, .skill h3 {
+            margin: 0.5rem 0;
+        }
+        .project-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .project-buttons a {
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #fff;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #f1f1f1;
+        }
+        footer a {
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Portfolio</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Skills</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section class="about-me">
+        <img src="https://imgur.com/nvySxMR.jpg" alt="Profile Picture">
+        <h2>About Me</h2>
+        <p>Hello! I am a skilled Data Analyst with expertise in Python, R Programming & Studio, PowerBI, Azure, and Tableau. I have a passion for transforming data into actionable insights.</p>
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="grid">
+            <div class="project">
+                <img src="https://i.imgur.com/pCKo2t8.jpg" alt="Project 1">
+                <h3>Project 1: Sales Dashboard</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="project-buttons">
+                    <a href="#">Blog Post</a>
+                    <a href="#">Source Code</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://i.imgur.com/2Gkz7mN.jpg" alt="Project 2">
+                <h3>Project 2: Customer Segmentation</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="project-buttons">
+                    <a href="#">Blog Post</a>
+                    <a href="#">Source Code</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://i.imgur.com/9e6rmqt.jpg" alt="Project 3">
+                <h3>Project 3: Financial Analysis</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="project-buttons">
+                    <a href="#">Blog Post</a>
+                    <a href="#">Source Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="grid">
+            <div class="skill">
+                <img src="https://i.imgur.com/rDkI7yB.jpg" alt="Python">
+                <h3>Python</h3>
+            </div>
+            <div class="skill">
+                <img src="https://i.imgur.com/Lm1CqD6.jpg" alt="Data Visualization">
+                <h3>Data Visualization</h3>
+            </div>
+            <div class="skill">
+                <img src="https://i.imgur.com/b6CHd7r.jpg" alt="SQL">
+                <h3>SQL</h3>
+            </div>
+            <div class="skill">
+                <img src="https://i.imgur.com/6NfDczG.jpg" alt="Data Storytelling">
+                <h3>Data Storytelling</h3>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Connect with me on <a href="#">LinkedIn</a> and <a href="#">GitHub</a>.</p>
+</footer>
+
+</body>
+</html>
+
