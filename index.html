@@ -6,14 +6,15 @@
     <title>Data Analyst Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'Open Sans', sans-serif;
             background-color: #f8f9fa;
-            color: #343a40;
+            color: #495057;
         }
         header {
-            background-color: #007bff;
+            background-color: #adb5bd;
             color: #fff;
             text-align: center;
             padding: 2rem 1rem;
@@ -34,6 +35,17 @@
             text-decoration: none;
             font-size: 1.1rem;
         }
+        .contact-info .button {
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            background-color: #74c0fc;
+            color: #fff;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
         .about-me {
             text-align: center;
             padding: 2rem 1rem;
@@ -44,7 +56,7 @@
             height: 200px;
             object-fit: cover;
             margin-bottom: 1rem;
-            border: 4px solid #007bff;
+            border: 4px solid #adb5bd;
         }
         .about-me h2 {
             font-family: 'Montserrat', sans-serif;
@@ -99,19 +111,23 @@
             padding: 0.5rem 1rem;
             text-decoration: none;
             border-radius: 4px;
-            background-color: #007bff;
+            background-color: #74c0fc;
             color: #fff;
             font-size: 1rem;
+        }
+        .powerbi-embed {
+            text-align: center;
+            padding: 2rem 1rem;
         }
         footer {
             text-align: center;
             padding: 1rem 0;
-            background-color: #343a40;
+            background-color: #495057;
             color: #fff;
         }
         footer a {
             text-decoration: none;
-            color: #007bff;
+            color: #74c0fc;
         }
     </style>
 </head>
@@ -120,8 +136,8 @@
 <header>
     <h1>Portfolio</h1>
     <div class="contact-info">
-        <a href="mailto:hwberberich23@gmail.com">Email: hwberberich23@gmail.com</a>
-        <a href="https://www.linkedin.com/in/hunter-berberich-5311001b0/" target="_blank">LinkedIn</a>
+        <a href="mailto:hwberberich23@gmail.com" class="button"><i class="fas fa-envelope"></i>Email: hwberberich23@gmail.com</a>
+        <a href="https://www.linkedin.com/in/hunter-berberich-5311001b0/" class="button" target="_blank">LinkedIn</a>
     </div>
 </header>
 
@@ -172,6 +188,11 @@
         </div>
     </section>
 
+    <section class="powerbi-embed">
+        <h2>Embedded Power BI Dashboard</h2>
+        <iframe width="1140" height="541.25" src="YOUR_EMBED_CODE_HERE" frameborder="0" allowFullScreen="true"></iframe>
+    </section>
+
     <section class="skills">
         <h2>Skills</h2>
         <div class="grid">
@@ -201,8 +222,8 @@
     <section id="contact" class="contact">
         <h2>Contact</h2>
         <div class="contact-details">
-            <a href="mailto:hwberberich23@gmail.com">hwberberich23@gmail.com</a>
-            <a href="https://www.linkedin.com/in/hunter-berberich-5311001b0/" target="_blank">LinkedIn</a>
+            <a href="mailto:hwberberich23@gmail.com" class="button"><i class="fas fa-envelope"></i>hwberberich23@gmail.com</a>
+            <a href="https://www.linkedin.com/in/hunter-berberich-5311001b0/" class="button" target="_blank">LinkedIn</a>
         </div>
     </section>
 </main>
