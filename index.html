@@ -81,7 +81,7 @@
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
+            gap: 1rem; /* Adjusted gap to reduce space between cards */
         }
         .project, .skill {
             border: 1px solid #ddd;
@@ -90,12 +90,15 @@
             text-align: center;
             background-color: #fff;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            height: auto; /* Ensures cards are auto height */
         }
         .project img, .skill img {
             width: 100%;
             height: auto;
             border-radius: 8px;
             margin-bottom: 1rem;
+            max-height: 150px; /* Sets a max height to make the cards less long */
+            object-fit: cover;
         }
         .project h3, .skill h3 {
             font-family: 'Montserrat', sans-serif;
@@ -104,6 +107,7 @@
         .project p, .skill p {
             font-size: 1rem;
             color: #6c757d;
+            margin: 0.5rem 0; /* Reduces space between elements */
         }
         .project-buttons {
             display: flex;
@@ -127,6 +131,8 @@
             width: 49%;
             height: auto;
             display: inline-block;
+            max-height: 100px; /* Sets a max height to balance the two images */
+            object-fit: cover;
         }
         footer {
             text-align: center;
@@ -243,6 +249,10 @@
 <footer>
     <p>Connect with me on <a href="https://www.linkedin.com/in/hunter-berberich-5311001b0/" target="_blank">LinkedIn</a> and <a href="https://github.com/hberbb" target="_blank">GitHub</a>.</p>
 </footer>
+
+</body>
+</html>
+
 
 </body>
 </html>
