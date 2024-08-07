@@ -49,6 +49,10 @@
         .about-me {
             text-align: center;
             padding: 2rem 1rem;
+            background-color: #e9ecef;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 1rem 0;
         }
         .about-me img {
             border-radius: 50%;
@@ -119,6 +123,11 @@
             text-align: center;
             padding: 2rem 1rem;
         }
+        .skill img.half {
+            width: 49%;
+            height: auto;
+            display: inline-block;
+        }
         footer {
             text-align: center;
             padding: 1rem 0;
@@ -142,6 +151,12 @@
 </header>
 
 <main>
+    <section class="powerbi-embed">
+        <h2>Interactive Power BI Dashboards</h2>
+        <iframe title="Flight and Sales" width="600" height="373.5" src="https://app.powerbigov.us/view?r=eyJrIjoiNmEzMzBjMGQtZGY2OS00YTExLWI5MTQtZTQwMWViZjczY2ZiIiwidCI6IjYyMGFlNWE5LTRlYzEtNGZhMC04NjQxLTVkOWYzODZjNzMwOSJ9" frameborder="0" allowFullScreen="true"></iframe>
+        <iframe title="Financial Analysis" width="600" height="373.5" src="https://app.powerbigov.us/view?r=eyJrIjoiNjlhNzQ3MzEtYjc3MS00YmFlLWFmYzMtOWNhYzBjYmU3ZTM4IiwidCI6IjYyMGFlNWE5LTRlYzEtNGZhMC04NjQxLTVkOWYzODZjNzMwOSJ9" frameborder="0" allowFullScreen="true"></iframe>
+    </section>
+
     <section class="about-me">
         <img src="https://i.imgur.com/nvySxMR.jpg" alt="Profile Picture">
         <h2>About Me</h2>
@@ -186,14 +201,8 @@
                     <a href="https://github.com/hberbb/Portfolio/raw/main/ClickHistoryPredictions.pdf" target="_blank">View Code</a>
                 </div>
             </div>
+        </div>
     </section>
-
-     <section class="powerbi-embed">
-        <h2>Interactive Power BI Dashboards</h2>
-        <iframe title="Flight and Sales" width="600" height="373.5" src="https://app.powerbigov.us/view?r=eyJrIjoiNmEzMzBjMGQtZGY2OS00YTExLWI5MTQtZTQwMWViZjczY2ZiIiwidCI6IjYyMGFlNWE5LTRlYzEtNGZhMC04NjQxLTVkOWYzODZjNzMwOSJ9" frameborder="0" allowFullScreen="true"></iframe>
-        <iframe title="Financial Analysis" width="600" height="373.5" src="https://app.powerbigov.us/view?r=eyJrIjoiNjlhNzQ3MzEtYjc3MS00YmFlLWFmYzMtOWNhYzBjYmU3ZTM4IiwidCI6IjYyMGFlNWE5LTRlYzEtNGZhMC04NjQxLTVkOWYzODZjNzMwOSJ9" frameborder="0" allowFullScreen="true"></iframe>
-    </section>
-
 
     <section class="skills">
         <h2>Skills</h2>
@@ -209,9 +218,9 @@
                 <p>I leverage RStudio to perform advanced data manipulation, visualization, statistical analysis, machine learning.</p>
             </div>
             <div class="skill">
-                <h3>Data Visualization</h3>
                 <img src="https://imgur.com/QhK4gUE.jpg" alt="Data Visualization 1" class="half">
                 <img src="https://imgur.com/VJB8hkp.jpg" alt="Data Visualization 2" class="half">
+                <h3>Data Visualization</h3>
                 <p>Proficient in creating interactive and insightful visualizations.</p>
             </div>
             <div class="skill">
@@ -234,6 +243,9 @@
 <footer>
     <p>Connect with me on <a href="https://www.linkedin.com/in/hunter-berberich-5311001b0/" target="_blank">LinkedIn</a> and <a href="https://github.com/hberbb" target="_blank">GitHub</a>.</p>
 </footer>
+
+</body>
+</html>
 
 </body>
 </html>
