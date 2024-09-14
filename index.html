@@ -70,10 +70,10 @@
             font-size: 1.1rem;
             margin-bottom: 1rem;
         }
-        .projects, .skills {
+        .projects, .skills, .certifications {
             padding: 2rem 1rem;
         }
-        .projects h2, .skills h2 {
+        .projects h2, .skills h2, .certifications h2 {
             text-align: center;
             font-family: 'Montserrat', sans-serif;
             margin-bottom: 2rem;
@@ -81,41 +81,41 @@
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem; /* Adjusted gap to reduce space between cards */
+            gap: 1rem;
         }
-        .project, .skill {
+        .project, .skill, .certification {
             border: 1px solid #ddd;
             border-radius: 8px;
             padding: 1rem;
             text-align: center;
             background-color: #fff;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            height: auto; /* Ensures cards are auto height */
+            height: auto;
         }
-        .project img, .skill img {
+        .project img, .skill img, .certification img {
             width: 100%;
             height: auto;
             border-radius: 8px;
             margin-bottom: 1rem;
-            max-height: 150px; /* Sets a max height to make the cards less long */
+            max-height: 150px;
             object-fit: cover;
         }
-        .project h3, .skill h3 {
+        .project h3, .skill h3, .certification h3 {
             font-family: 'Montserrat', sans-serif;
             margin: 0.5rem 0;
         }
-        .project p, .skill p {
+        .project p, .skill p, .certification p {
             font-size: 1rem;
             color: #6c757d;
-            margin: 0.5rem 0; /* Reduces space between elements */
+            margin: 0.5rem 0;
         }
-        .project-buttons {
+        .project-buttons, .certification-buttons {
             display: flex;
             justify-content: center;
             gap: 1rem;
             margin-top: 1rem;
         }
-        .project-buttons a {
+        .project-buttons a, .certification-buttons a {
             padding: 0.5rem 1rem;
             text-decoration: none;
             border-radius: 4px;
@@ -126,13 +126,6 @@
         .powerbi-embed {
             text-align: center;
             padding: 2rem 1rem;
-        }
-        .skill img.half {
-            width: 49%;
-            height: auto;
-            display: inline-block;
-            max-height: 100px; /* Sets a max height to balance the two images */
-            object-fit: cover;
         }
         footer {
             text-align: center;
@@ -196,65 +189,5 @@
                 <p>Human Resource Analytics and Case Report. This project aims to save companies money by predicting which employees will most likely quit.</p>
                 <div class="project-buttons">
                     <a href="https://github.com/hberbb/Portfolio/raw/main/HR%20Analytics%20Case%20Report.docx" target="_blank">Download Report</a>
-                    <a href="https://github.com/hberbb/Portfolio/raw/main/FinalModels.pdf" target="_blank">View Code</a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="https://imgur.com/npZfQTI.jpg" alt="Marketing Analytics">
-                <h3>Marketing Analytics</h3>
-                <p>Marketing analytics report and code for analyzing the effectiveness of email campaigns.</p>
-                <div class="project-buttons">
-                    <a href="https://github.com/hberbb/Portfolio/raw/main/Email%20Campaign%20Effectiveness%20Analysis%20for%20Sephora.pdf" target="_blank">Download Report</a>
-                    <a href="https://github.com/hberbb/Portfolio/raw/main/ClickHistoryPredictions.pdf" target="_blank">View Code</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="skills">
-        <h2>Skills</h2>
-        <div class="grid">
-            <div class="skill">
-                <img src="https://imgur.com/ANEFv8h.jpg" alt="Python">
-                <h3>Python</h3>
-                <p>Expertise in data analysis, machine learning, and automation.</p>
-            </div>
-            <div class="skill">
-                <img src="https://i.imgur.com/uSvp5Lu.jpg" alt="R">
-                <h3>R Programming & RStudio</h3>
-                <p>I leverage RStudio to perform advanced data manipulation, visualization, statistical analysis, machine learning.</p>
-            </div>
-            <div class="skill">
-                <img src="https://imgur.com/QhK4gUE.jpg" alt="Data Visualization 1" class="half">
-                <img src="https://imgur.com/VJB8hkp.jpg" alt="Data Visualization 2" class="half">
-                <h3>Data Visualization</h3>
-                <p>Proficient in creating interactive and insightful visualizations.</p>
-            </div>
-            <div class="skill">
-                <img src="https://imgur.com/ewUMNVH.jpg" alt="Database Management">
-                <h3>Database Management</h3>
-                <p>Knowledge of database design and management principles.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <div class="contact-details">
-            <a href="mailto:hwberberich23@gmail.com" class="button"><i class="fas fa-envelope"></i>hwberberich23@gmail.com</a>
-            <a href="https://www.linkedin.com/in/hunter-berberich-5311001b0/" class="button" target="_blank">LinkedIn</a>
-        </div>
-    </section>
-</main>
-
-<footer>
-    <p>Connect with me on <a href="https://www.linkedin.com/in/hunter-berberich-5311001b0/" target="_blank">LinkedIn</a> and <a href="https://github.com/hberbb" target="_blank">GitHub</a>.</p>
-</footer>
-
-</body>
-</html>
-
-
-</body>
-</html>
+                    <a href="https://github.com/hberbb/Portfolio/raw/main/FinalModels.pdf"
 
