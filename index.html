@@ -70,10 +70,20 @@
             font-size: 1.1rem;
             margin-bottom: 1rem;
         }
-        .projects, .skills, .certifications {
+        .certifications-images {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .certifications-images img {
+            width: 100px;
+            height: auto;
+        }
+        .projects, .skills {
             padding: 2rem 1rem;
         }
-        .projects h2, .skills h2, .certifications h2 {
+        .projects h2, .skills h2 {
             text-align: center;
             font-family: 'Montserrat', sans-serif;
             margin-bottom: 2rem;
@@ -83,7 +93,7 @@
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 1rem;
         }
-        .project, .skill, .certification {
+        .project, .skill {
             border: 1px solid #ddd;
             border-radius: 8px;
             padding: 1rem;
@@ -92,7 +102,7 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             height: auto;
         }
-        .project img, .skill img, .certification img {
+        .project img, .skill img {
             width: 100%;
             height: auto;
             border-radius: 8px;
@@ -100,22 +110,22 @@
             max-height: 150px;
             object-fit: cover;
         }
-        .project h3, .skill h3, .certification h3 {
+        .project h3, .skill h3 {
             font-family: 'Montserrat', sans-serif;
             margin: 0.5rem 0;
         }
-        .project p, .skill p, .certification p {
+        .project p, .skill p {
             font-size: 1rem;
             color: #6c757d;
             margin: 0.5rem 0;
         }
-        .project-buttons, .certification-buttons {
+        .project-buttons {
             display: flex;
             justify-content: center;
             gap: 1rem;
             margin-top: 1rem;
         }
-        .project-buttons a, .certification-buttons a {
+        .project-buttons a {
             padding: 0.5rem 1rem;
             text-decoration: none;
             border-radius: 4px;
@@ -153,9 +163,16 @@
     <section class="about-me">
         <img src="https://i.imgur.com/nvySxMR.jpg" alt="Profile Picture">
         <h2>About Me</h2>
-        <p> Hunter Berberich  |   Richmond, Virginia<p>
+        <p>Hunter Berberich  |   Richmond, Virginia</p>
         <p>I am a dedicated Data Analyst with a strong background in data analysis, financial modeling, and business analytics. I have a solid grasp of multiple programming languages, statistical analysis, and Microsoft Office, which allows me to excel in forecast modeling and identifying trends. I am committed to using advanced analytical techniques to optimize processes and provide valuable, data-driven insights to solve business challenges. My objective is to utilize my skills and experience to support strategic decision-making and improve business performance in a professional environment.</p>
         <p>Master's in Data Analytics - Business Analytics</p>
+        
+        <!-- Small Certification Images -->
+        <div class="certifications-images">
+            <img src="https://imgur.com/kqCf15h.jpg" alt="Google Data Analytics Certification">
+            <img src="https://imgur.com/qgKMKFG.jpg" alt="Microsoft Generative AI Certification">
+            <img src="https://imgur.com/kW3mmTf.jpg" alt="Anaconda Python Data Science Certification">
+        </div>
     </section>
 
     <section class="powerbi-embed">
@@ -184,13 +201,13 @@
                 </div>
             </div>
             <div class="project">
+                <img src="            <div class="project">
                 <img src="https://imgur.com/y2l0R9g.jpg" alt="HR Analytics">
                 <h3>HR Analytics</h3>
                 <p>Human Resource Analytics and Case Report. This project aims to save companies money by predicting which employees will most likely quit.</p>
                 <div class="project-buttons">
                     <a href="https://github.com/hberbb/Portfolio/raw/main/HR%20Analytics%20Case%20Report.docx" target="_blank">Download Report</a>
-                    <a href="https://github.com/hberbb/Portfolio/raw/main/FinalModels.pdf"
- <a href="https://github.com/hberbb/Portfolio/raw/main/FinalModels.pdf" target="_blank">View Code</a>
+                    <a href="https://github.com/hberbb/Portfolio/raw/main/FinalModels.pdf" target="_blank">View Code</a>
                 </div>
             </div>
             <div class="project">
@@ -216,7 +233,7 @@
             <div class="skill">
                 <img src="https://i.imgur.com/uSvp5Lu.jpg" alt="R">
                 <h3>R Programming & RStudio</h3>
-                <p>I leverage RStudio to perform advanced data manipulation, visualization, statistical analysis, machine learning.</p>
+                <p>I leverage RStudio to perform advanced data manipulation, visualization, statistical analysis, and machine learning.</p>
             </div>
             <div class="skill">
                 <img src="https://imgur.com/QhK4gUE.jpg" alt="Data Visualization 1" class="half">
@@ -232,33 +249,19 @@
         </div>
     </section>
 
-   <!-- New Certifications Section -->
-<section class="certifications">
-    <h2>Certifications</h2>
-    <div class="grid">
-        <div class="certification">
-            <img src="https://imgur.com/kqCf15h.jpg" alt="Google Data Analytics Certification">
-            <h3>Google Data Analytics</h3>
-            <p>Completed the Google Data Analytics Certificate, gaining skills in data cleaning, analysis, and visualization using industry-standard tools.</p>
-            <div class="certification-buttons">
-                <a href="https://imgur.com/kW3mmTf" target="_blank">View Certificate</a>
-            </div>
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <div class="contact-details">
+            <a href="mailto:hwberberich23@gmail.com" class="button"><i class="fas fa-envelope"></i>hwberberich23@gmail.com</a>
+            <a href="https://www.linkedin.com/in/hunter-berberich-5311001b0/" class="button" target="_blank">LinkedIn</a>
         </div>
-        <div class="certification">
-            <img src="https://imgur.com/qgKMKFG.jpg" alt="Microsoft Generative AI Certification">
-            <h3>Career Essentials in Generative AI by Microsoft</h3>
-            <p>Completed certification in Generative AI Essentials, mastering AI principles and their applications in business data analytics.</p>
-            <div class="certification-buttons">
-                <a href="https://imgur.com/qgKMKFG" target="_blank">View Certificate</a>
-            </div>
-        </div>
-        <div class="certification">
-            <img src="https://imgur.com/kW3mmTf.jpg" alt="Anaconda Python Data Science Certification">
-            <h3>Anaconda Python Data Science Professional Certification</h3>
-            <p>Completed the Anaconda Python Data Science Professional Certification, covering advanced data science techniques and Python programming.</p>
-            <div class="certification-buttons">
-                <a href="#" target="_blank">View Certificate</a> <!-- You can update this link with the correct URL -->
-            </div>
-        </div>
-    </div>
+    </section>
+</main>
+
+<footer>
+    <p>Connect with me on <a href="https://www.linkedin.com/in/hunter-berberich-5311001b0/" target="_blank">LinkedIn</a> and <a href="https://github.com/hberbb" target="_blank">GitHub</a>.</p>
+</footer>
+
+</body>
+</html>
 </section>
